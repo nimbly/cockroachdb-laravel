@@ -14,7 +14,7 @@ class CockroachConnection extends Connection
     /**
      * Get the default query grammar instance.
      *
-     * @return \App\Cockroach\Query\CockroachGrammar
+     * @return \Illuminate\Database\Grammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -24,7 +24,7 @@ class CockroachConnection extends Connection
     /**
      * Get a schema builder instance for the connection.
      *
-     * @return \Illuminate\Database\Schema\PostgresBuilder
+     * @return CockroachBuilder
      */
     public function getSchemaBuilder()
     {
@@ -38,7 +38,7 @@ class CockroachConnection extends Connection
     /**
      * Get the default schema grammar instance.
      *
-     * @return \App\Cockroach\Schema\CockroachGrammar
+     * @return \Illuminate\Database\Grammar
      */
     protected function getDefaultSchemaGrammar()
     {
@@ -48,7 +48,7 @@ class CockroachConnection extends Connection
     /**
      * Get the default post processor instance.
      *
-     * @return \Illuminate\Database\Query\Processors\PostgresProcessor
+     * @return CockroachProcessor
      */
     protected function getDefaultPostProcessor()
     {
