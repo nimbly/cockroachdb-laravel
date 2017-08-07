@@ -1,6 +1,6 @@
 <?php
 
-namespace Nbj\Cockroach\Grammar\Query;
+namespace Cockroach\Grammar\Query;
 
 use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Support\Arr;

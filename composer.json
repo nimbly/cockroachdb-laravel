@@ -1,5 +1,5 @@
 {
-    "name": "nbj/cockroachdb-laravel",
+    "name": "nimbly/cockroachdb-laravel",
     "description": "CockroachDB driver for Laravel 5.4",
     "type": "package",
     "license": "GNU",
@@ -7,12 +7,20 @@
         {
             "name": "Nikolaj Boel Jensen",
             "email": "nbj@cego.dk"
+        },
+
+        {
+            "name": "Brent Scheffler",
+            "email": "brent@brentscheffler.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/database": ">=5.4",
+        "doctrine/dbal": "^2.6"
+    },
     "autoload": {
         "psr-4": {
-            "Nbj\\": "src/"
+            "Cockroach\\": "src/Cockroach"
         }
     }
 }

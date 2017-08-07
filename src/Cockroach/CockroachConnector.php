@@ -1,6 +1,6 @@
 <?php
 
-namespace Nbj\Cockroach;
+namespace Cockroach;
 
 use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;

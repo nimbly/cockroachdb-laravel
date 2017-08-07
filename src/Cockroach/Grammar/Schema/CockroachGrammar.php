@@ -1,6 +1,6 @@
 <?php
 
-namespace Nbj\Cockroach\Grammar\Schema;
+namespace Cockroach\Grammar\Schema;
 
 use Illuminate\Database\Schema\Grammars\Grammar;
 use Illuminate\Support\Fluent;
