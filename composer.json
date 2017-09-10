@@ -13,10 +13,7 @@
             "email": "brent@brentscheffler.com"
         }
     ],
-    "require": {
-        "illuminate\/database": ">=5.4",
-        "doctrine\/dbal": "^2.6"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Cockroach\\": "src\/Cockroach"

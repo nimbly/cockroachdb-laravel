@@ -1,7 +1,7 @@
 #!/bin/php
 <?php
 
-echo "\nTag and submit a new release of ActiveResource.\n\n";
+echo "\nTag and submit a new release\n\n";
 
 $currentVersion = file_get_contents('VERSION');
 echo "\nCurrent version: {$currentVersion}\n";
@@ -38,7 +38,7 @@ file_put_contents('composer.json', json_encode($composer, JSON_PRETTY_PRINT));
 file_put_contents('VERSION', $version);
 
 // Commit & push changes, tag commit and push again
-exec("git commit -am \"Tagging ActiveResource version {$version}\"");
+exec("git commit -am \"Tagging version {$version}\"");
 exec("git push");
 exec("git tag {$version}");
 exec("git push --tags");
